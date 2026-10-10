@@ -1,0 +1,18 @@
+Project Folder Structure
+
+datanote/
+├── package.json               # Dependencies & build scripts
+├── vite.config.ts             # Vite configuration
+├── index.html                 # App entry point
+├── src/
+│   ├── main.tsx               # React root renderer
+│   ├── App.tsx                # Main layout controller (manages tabs & split-pane)
+│   ├── components/
+│   │   ├── Sidebar.tsx        # File list & navigation drawer
+│   │   ├── Editor.tsx         # CodeMirror / Monaco markdown text editor
+│   │   ├── Preview.tsx        # Markdown + KaTeX Math + Code block renderer
+│   │   └── DevToolsModal.tsx  # Quick dev utilities (JSON formatter, Regex, etc.)
+│   ├── engines/
+│   │   └── duckdbWorker.ts    # WebAssembly DuckDB query execution logic
+│   └── styles/
+│       └── globals.css        # Tailwind CSS & theme definitions
